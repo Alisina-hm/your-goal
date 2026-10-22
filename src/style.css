@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "Vazir";
-  src: url("./font/Vazir.ttf") format("truetype");
+  src: url("../font/Vazir.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "paeez";
-  src: url("./font/paeez.ttf") format("truetype");
+  src: url("../font/paeez.ttf") format("truetype");
 }
 
 body {
