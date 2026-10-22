@@ -309,7 +309,7 @@ for (const key of bahar_keys) {
   btn_my_goals_bahar.classList.add("btn-my-goals-bahar");
   cnt_text_goals_bahar.classList.add("cnt-text-goals-bahar");
 
-  image_bahar.src = "../img/بهار.png";
+  image_bahar.src = "./img/بهار.png";
   title_bahar.textContent = "بهار";
   text_bahar.textContent = `فروردین ${goal_year} - خرداد ${goal_year}`;
   text_btn_my_goals_bahar.textContent = "لیست اهداف";
@@ -884,7 +884,7 @@ for (const key of summer_keys) {
   btn_my_goals_summer.classList.add("btn-my-goals-summer");
   cnt_text_goals_summer.classList.add("cnt-text-goals-summer");
 
-  image_summer.src = "../img/تابستان.png";
+  image_summer.src = "./img/تابستان.png";
   title_summer.textContent = "تابستان";
   text_summer.textContent = `تیر ${goal_year} - شهریور ${goal_year}`;
   text_btn_my_goals_summer.textContent = "لیست اهداف";
@@ -1378,7 +1378,7 @@ for (const key of autumn_keys) {
   btn_my_goals_autumn.classList.add("btn-my-goals-autumn");
   cnt_text_goals_autumn.classList.add("cnt-text-goals-autumn");
 
-  image_autumn.src = "../img/پاییز.png";
+  image_autumn.src = "./img/پاییز.png";
   title_autumn.textContent = "پاییز";
   text_autumn.textContent = `مهر ${goal_year} - آذر ${goal_year}`;
   text_btn_my_goals_autumn.textContent = "لیست اهداف";
@@ -1872,7 +1872,7 @@ for (const key of winter_keys) {
   btn_my_goals_winter.classList.add("btn-my-goals-winter");
   cnt_text_goals_winter.classList.add("cnt-text-goals-winter");
 
-  image_winter.src = "../img/زمستان.png";
+  image_winter.src = "./img/زمستان.png";
   title_winter.textContent = "زمستان";
   text_winter.textContent = `دی ${goal_year} - اسفند ${goal_year}`;
   text_btn_my_goals_winter.textContent = "لیست اهداف";
