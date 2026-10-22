@@ -1,0 +1,1101 @@
+<!doctype html>
+<html
+  lang="fa"
+  dir="rtl"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>اهداف من</title>
+
+    <link
+      rel="stylesheet"
+      href="../output.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#FDF8E9] overflow-hidden">
+    <main>
+      <!-- صفحه اصلی -->
+      <section class="home-page active hidden flex flex-col items-center">
+        <h2 class="desctop-text hidden lg:flex">
+          لطفا فقط در موبال استفاده نمایید.
+        </h2>
+        <img
+          class="w-[50%] lg:w-[28%]"
+          src="../img/لوگو.png"
+          alt="logo"
+        />
+
+        <div>
+          <h1 class="text-[#5F4D37] text-center text-[32px] mt-[20px]">
+            اهداف فصلی‌ات رو<br />
+            ثبت و پیگیری کن
+          </h1>
+
+          <p class="text-[#A18E75] text-center text-[16px] mt-[20px]">
+            مسیر رو انتخاب کن،<br />
+            قدم اول رو بردار، آینده<br />
+            از همینجا شروع میشه
+          </p>
+        </div>
+
+        <div class="text-[#5F4D37] mt-[30px] flex flex-col gap-3">
+          <a
+            class="new-goals bg-[#F4D797] px-18 py-2 text-center rounded-[20px] shadow-lg"
+            >اهداف جدید</a
+          >
+          <a
+            class="my-goals px-18 py-2 text-center rounded-[20px] border-2 border-[#F4D797] shadow-lg"
+            >اهداف من</a
+          >
+        </div>
+
+        <hr class="w-[20%] mt-[30px] text-[#E8BE53] border-1" />
+        <hr class="w-3/4 mx-auto border-0 h-px bg-gray-300" />
+
+        <p class="craitor mt-[60px] text-[#5F4D37]">طراح، علی‌سینا</p>
+      </section>
+
+      <!-- ایجاد هدف صفحه انتخاب فصل -->
+      <section class="page-one hidden flex-col">
+        <a class="back-home-page-one mr-auto text-[#8E775E] p-4 text-[20px]"
+          ><i class="fa-solid fa-arrow-left"></i
+        ></a>
+
+        <!-- تایتل -->
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-[30px] text-[#62513C]">انتخاب فصل</h2>
+
+          <p class="text-[#947C60]">برای هر فصل، اهداف خود را ثبت کنید.</p>
+        </div>
+
+        <!-- فصل ها -->
+        <div class="flex flex-col p-5 gap-4">
+          <!-- بهار -->
+          <div
+            class="relative bg-[#EBF1D5] flex flex-row-reverse items-center justify-between rounded-[8px]"
+          >
+            <img
+              class="w-[220px] rounded-l-[8px]"
+              src="../img/بهار.png"
+              alt="image"
+            />
+
+            <div class="flex flex-col-reverse gap-4 mr-[20px]">
+              <a
+                class="btn-select-bahar bg-[#9CA170] text-[#F7FFB1] text-center rounded-[18px] text-[15px] w-[70px]"
+              >
+                برگزیدن
+              </a>
+
+              <h3 class="text-[20px] text-[#646E3C]">فصل بهار</h3>
+            </div>
+
+            <!-- لایه قفل کارت بهار -->
+            <div
+              class="bahar-lock-layer hidden absolute inset-0 z-50 rounded-[8px] bg-[#5F4D37]/40 cursor-pointer"
+            ></div>
+          </div>
+
+          <!-- تابستان-->
+          <div
+            class="summer-card relative bg-[#FCF3CC] flex flex-row-reverse items-center justify-between rounded-[8px]"
+          >
+            <img
+              class="w-[220px] rounded-l-[8px]"
+              src="../img/تابستان.png"
+              alt="image"
+            />
+
+            <div class="flex flex-col-reverse gap-4 mr-[20px]">
+              <a
+                class="btn-select-summer bg-[#EFBD5A] text-[#F7FFB1] text-center rounded-[18px] text-[15px] w-[70px]"
+              >
+                برگزیدن
+              </a>
+
+              <h3 class="text-[20px] text-[#87621A]">فصل تابستان</h3>
+            </div>
+
+            <!-- لایه مات -->
+            <div
+              class="summer-lock-layer hidden absolute inset-0 z-50 rounded-[8px] bg-[#5F4D37]/40 cursor-pointer"
+            ></div>
+          </div>
+
+          <!-- پاییز-->
+          <div
+            class="autumn-card relative bg-[#FBEED3] flex flex-row-reverse items-center justify-between rounded-[8px]"
+          >
+            <img
+              class="w-[220px] rounded-l-[8px]"
+              src="../img/پاییز.png"
+              alt="فصل پاییز"
+            />
+
+            <div class="flex flex-col-reverse gap-4 mr-[20px]">
+              <a
+                class="btn-select-autumn bg-[#EB9359] text-[#F7FFB1] text-center rounded-[18px] text-[15px] w-[70px]"
+              >
+                برگزیدن
+              </a>
+
+              <h3 class="text-[20px] text-[#AF6536]">فصل پاییز</h3>
+            </div>
+
+            <div
+              class="autumn-lock-layer hidden absolute inset-0 z-50 rounded-[8px] bg-[#5F4D37]/40 cursor-pointer"
+            ></div>
+          </div>
+
+          <!-- زمستان -->
+          <div
+            class="winter-card relative bg-[#E5EEF5] flex flex-row-reverse items-center justify-between rounded-[8px]"
+          >
+            <img
+              class="w-[220px] rounded-l-[8px]"
+              src="../img/زمستان.png"
+              alt="فصل زمستان"
+            />
+
+            <div class="flex flex-col-reverse gap-4 mr-[20px]">
+              <a
+                class="btn-select-winter bg-[#8CB7D9] text-[#F7FFB1] text-center rounded-[18px] text-[15px] w-[70px]"
+              >
+                برگزیدن
+              </a>
+              <h3 class="text-[20px] text-[#416B8C]">فصل زمستان</h3>
+            </div>
+
+            <div
+              class="winter-lock-layer hidden absolute inset-0 z-50 rounded-[8px] bg-[#34495E]/40 cursor-pointer"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!--  صفحه اهداف قبلی-->
+      <section class="page-two hidden flex-col">
+        <div class="flex justify-between flex-row-reverse">
+          <a class="back-home-page-tow mr-auto text-[#8E775E] p-4 text-[20px]"
+            ><i class="fa-solid fa-arrow-left"></i
+          ></a>
+
+          <a class="seting-icon ml-auto text-[#8E775E] p-4 text-[20px]"
+            ><i class="fa-solid fa-gear"></i
+          ></a>
+        </div>
+
+        <!-- تنظیمات -->
+        <div class="seting hidden flex-col items-center">
+          <div class="fixed inset-0 bg-[#5F4D37]/40 backdrop-blur-md"></div>
+
+          <div
+            class="z-2 absolute flex flex-col items-center bg-[#ffffff] right-[12%] bottom-[30%] w-[75%] h-[350px] rounded-[12px]"
+          >
+            <a
+              class="Close-seting mr-auto text-[#8E775E] text-[20px] ml-[10px] mt-[5px]"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+
+            <h3 class="text-[22px] text-[#62513C]">تنظیمات</h3>
+
+            <!-- ایتم های تنظیمات -->
+            <div>
+              <!-- پاک کردن تمام اهداف -->
+              <div
+                class="flex flex-row-reverse bg-[#FEF2F2] border border-[#FECACA] rounded-[12px] gap-[40px] p-2 px-4 items-center mt-[20px] w-[90%] mx-auto"
+              >
+                <div class="relative w-[44px] h-[44px] shrink-0">
+                  <a
+                    class="trash-goal-icon active absolute inset-0 flex items-center justify-center bg-[#FEE2E2] text-[#DC2626] border border-[#FECACA] p-2 rounded-[10px]"
+                  >
+                    <i class="fa-solid fa-trash-can"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="remove-all-goal absolute inset-0 flex items-center justify-center bg-[#FEE2E2] text-[#DC2626] border border-[#FECACA] p-2 rounded-[10px]"
+                  >
+                    <i class="fa-solid fa-check"></i>
+                  </a>
+                </div>
+
+                <div>
+                  <h4 class="text-[#991B1B]">پاک کردن حافظه</h4>
+
+                  <p class="text-[12px] text-[#B91C1C]">
+                    تمامی اهداف ذخیره شده حذف می‌شوند
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- تایتل -->
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-[30px] text-[#62513C]">اهداف من</h2>
+
+          <p class="text-[#947C60] text-center">
+            تمام اهدافی که برای هر فصل ثبت کردی، <br />دراینجا قابل مشاهده است.
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="text-no-goals active hidden text-center mt-[18%] bg-[#FBD3B5] text-[#545454] w-[50%] mx-auto p-4 rounded-[12px] flex flex-col gap-3"
+          >
+            <h3>هدفی ثبت نشده</h3>
+
+            <a
+              class="new-goal-page-two bg-[#7D611F] text-[#FDFFD4] w-[80%] mx-auto rounded-[10px]"
+              href=""
+              >ثبت اهداف جدید</a
+            >
+          </div>
+
+          <div
+            class="cnt-my-goals h-[80vh] overflow-y-auto flex flex-col gap-4"
+          ></div>
+        </div>
+      </section>
+
+      <!-- صفحه لیست اهداف -->
+      <section>
+        <!-- بهار -->
+        <section class="bahar-list-goal hidden flex-col">
+          <a
+            class="back-home-page-list-bahar mr-auto text-[#8E775E] p-4 text-[20px]"
+            ><i class="fa-solid fa-arrow-left"></i
+          ></a>
+
+          <!-- تایتل -->
+          <div class="flex flex-col items-center">
+            <h3 class="text-[22px] text-[#5F4D37]">
+              اهداف شما در فصل بهار سال <span class="year-list"></span>
+            </h3>
+
+            <p class="title-goal-bahar text-[#A18E75] w-[75%] text-center mt-2">
+              میتوانید وضعیت اهدافی که در فصل بهار ثبت کردید را مشخص کنید، آیا
+              محقق شدند یا خیر.
+            </p>
+          </div>
+
+          <div class="cnt-goal-bahar-end-edit p-[20px]"></div>
+
+          <!-- نتیجه اهداف -->
+          <div class="fixed bottom-0 mb-[20px] right-[11%]">
+            <a
+              class="Set-Status active hidden bg-[#F5E090] text-[#585956] px-18 py-1 rounded-[12px] gap-2 items-center"
+              ><i class="fa-solid fa-chevron-right"></i> ثبت وضعیت اهداف
+            </a>
+
+            <a
+              class="back-end-page-goal-bahar hidden bg-[#F5E090] text-[#585956] px-18 py-1 rounded-[12px] gap-2 items-center justify-center mr-[35%]"
+              ><i class="fa-solid fa-chevron-right"></i> برگشت
+            </a>
+          </div>
+
+          <!-- ثبت نهایی وضعیت -->
+          <div class="Set-Status-exit hidden">
+            <div
+              class="fixed inset-0 bg-[#5F4D37]/40 backdrop-blur-md z-[1000]"
+            ></div>
+
+            <div
+              class="Set-Status-exit-text fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#ffffff] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+            >
+              <div class="text-center mt-[30px]">
+                <h2 class="text-[#2c1e16] text-[15px]">
+                  آیا از ثبت وضعیت اهداف اطمینان دارید؟
+                </h2>
+
+                <p class="text-[#656565]">امکان ویرایش بعد ثبت وجود ندارد</p>
+              </div>
+
+              <div
+                class="flex flex-col-reverse gap-2 mt-auto mb-[25px] items-center"
+              >
+                <a
+                  class="Set-Status-exit-btn bg-[#979D6D] text-[#F1FFD4] px-8 py-1 rounded-[12px]"
+                  href=""
+                >
+                  ثبت وضعیت و خروج
+                </a>
+
+                <a
+                  class="edit-btn-Status bg-[#F5E090] text-[#585956] px-18 py-1 rounded-[12px] w-full"
+                >
+                  ویرایش
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- تابستان -->
+        <section class="summer-list-goal hidden flex-col">
+          <a
+            class="back-home-page-list-summer mr-auto text-[#A85D27] p-4 text-[20px]"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <!-- تایتل -->
+          <div class="flex flex-col items-center">
+            <h3 class="text-[22px] text-[#A85D27]">
+              اهداف شما در فصل تابستان سال
+              <span class="year-list-summer"></span>
+            </h3>
+
+            <p
+              class="title-goal-summer text-[#B7834B] w-[75%] text-center mt-2"
+            >
+              میتوانید وضعیت اهدافی که در فصل تابستان ثبت کردید را مشخص کنید،
+              آیا محقق شدند یا خیر.
+            </p>
+          </div>
+
+          <div class="cnt-goal-summer-end-edit p-[20px]"></div>
+
+          <!-- نتیجه اهداف -->
+          <div class="fixed bottom-0 mb-[20px] right-[11%]">
+            <a
+              class="Set-Status-Summer active hidden bg-[#FFE0A3] text-[#75451F] px-18 py-1 rounded-[12px] gap-2 items-center"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+              ثبت وضعیت اهداف
+            </a>
+
+            <a
+              class="back-end-page-goal-summer hidden bg-[#FFE0A3] text-[#75451F] px-18 py-1 rounded-[12px] gap-2 mr-[35%] justify-center items-center"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+              برگشت
+            </a>
+          </div>
+
+          <!-- ثبت نهایی وضعیت -->
+          <div class="Set-Status-exit-summer hidden">
+            <div
+              class="fixed inset-0 bg-[#A85D27]/40 backdrop-blur-md z-[1000]"
+            ></div>
+
+            <div
+              class="Set-Status-exit-text-summer fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#FFFCF5] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+            >
+              <div class="text-center mt-[30px]">
+                <h2 class="text-[#75451F] text-[15px]">
+                  آیا از ثبت وضعیت اهداف اطمینان دارید؟
+                </h2>
+
+                <p class="text-[#8B8175]">امکان ویرایش بعد ثبت وجود ندارد</p>
+              </div>
+
+              <div
+                class="flex flex-col-reverse gap-2 mt-auto mb-[25px] items-center"
+              >
+                <a
+                  class="Set-Status-exit-btn-summer bg-[#E6A04B] text-[#FFFFFF] px-8 py-1 rounded-[12px]"
+                  href=""
+                >
+                  ثبت وضعیت و خروج
+                </a>
+
+                <a
+                  class="edit-btn-Status-summer bg-[#FFE0A3] text-[#75451F] px-18 py-1 rounded-[12px] w-full"
+                >
+                  ویرایش
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- پاییز -->
+        <section class="autumn-list-goal hidden flex-col">
+          <a
+            class="back-home-page-list-autumn mr-auto text-[#AF6536] p-4 text-[20px]"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <div class="flex flex-col items-center">
+            <h3 class="text-[20px] text-[#AF6536]">
+              اهداف شما در فصل پاییز سال
+              <span class="year-list-autumn"></span>
+            </h3>
+
+            <p
+              class="title-goal-autumn text-[#B7834B] w-[75%] text-center mt-2 text-[14px]"
+            >
+              میتوانید وضعیت اهدافی که در فصل پاییز ثبت کردید را مشخص کنید، آیا
+              محقق شدند یا خیر.
+            </p>
+          </div>
+
+          <div class="cnt-goal-autumn-end-edit p-[10px]"></div>
+
+          <!-- دکمه‌های وضعیت اهداف -->
+          <div class="fixed bottom-0 mb-[10px] right-[11%]">
+            <a
+              class="Set-Status-Autumn active hidden bg-[#FBE0C4] text-[#8C4D2B] px-18 py-1 rounded-[12px] gap-2 flex items-center"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+              ثبت وضعیت اهداف
+            </a>
+
+            <a
+              class="back-end-page-goal-autumn hidden bg-[#FBE0C4] text-[#8C4D2B] px-18 py-1 rounded-[12px] gap-2 flex items-center mr-[35%] justify-center"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+              برگشت
+            </a>
+          </div>
+
+          <!-- تأیید ثبت وضعیت -->
+          <div class="Set-Status-exit-autumn hidden">
+            <div
+              class="fixed inset-0 bg-[#8C4D2B]/40 backdrop-blur-md z-[1000]"
+            ></div>
+
+            <div
+              class="Set-Status-exit-text-autumn fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#FFFCF5] w-[75%] max-w-[400px] h-[300px] rounded-[12px]"
+            >
+              <div class="text-center mt-[30px]">
+                <h2 class="text-[#8C4D2B] text-[15px]">
+                  آیا از ثبت وضعیت اهداف اطمینان دارید؟
+                </h2>
+
+                <p class="text-[#8B8175]">امکان ویرایش بعد از ثبت وجود ندارد</p>
+              </div>
+
+              <div
+                class="flex flex-col-reverse items-center gap-2 mt-auto mb-[25px]"
+              >
+                <a
+                  class="Set-Status-exit-btn-autumn bg-[#EB9359] text-white py-1 rounded-[12px] w-full"
+                  href=""
+                >
+                  ثبت وضعیت و خروج
+                </a>
+
+                <a
+                  class="edit-btn-Status-autumn bg-[#FBE0C4] text-[#8C4D2B] py-1 rounded-[12px] w-full"
+                >
+                  ویرایش
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- زمستان-->
+        <section class="winter-list-goal hidden flex-col">
+          <a
+            class="back-home-page-list-winter mr-auto text-[#416B8C] p-4 text-[20px]"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <div class="flex flex-col items-center">
+            <h3 class="text-[22px] text-[#416B8C]">
+              اهداف شما در فصل زمستان سال
+              <span class="year-list-winter"></span>
+            </h3>
+
+            <p
+              class="title-goal-winter text-[#6F94B2] w-[75%] text-center mt-2"
+            >
+              میتوانید وضعیت اهدافی که در فصل زمستان ثبت کردید را مشخص کنید، آیا
+              محقق شدند یا خیر.
+            </p>
+          </div>
+
+          <div class="cnt-goal-winter-end-edit p-[20px]"></div>
+
+          <!-- دکمه‌های وضعیت اهداف -->
+          <div class="fixed bottom-0 mb-[20px] right-[11%]">
+            <a
+              class="Set-Status-Winter active hidden bg-[#DCEAF5] text-[#416B8C] px-18 py-1 rounded-[12px] gap-2 items-center"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+              ثبت وضعیت اهداف
+            </a>
+
+            <a
+              class="back-end-page-goal-winter hidden bg-[#DCEAF5] text-[#416B8C] px-18 py-1 rounded-[12px] gap-2 justify-center mr-[35%] items-center"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+              برگشت
+            </a>
+          </div>
+
+          <!-- تأیید ثبت وضعیت -->
+          <div class="Set-Status-exit-winter hidden">
+            <div
+              class="fixed inset-0 bg-[#416B8C]/40 backdrop-blur-md z-[1000]"
+            ></div>
+
+            <div
+              class="Set-Status-exit-text-winter fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#F7FAFC] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+            >
+              <div class="text-center mt-[30px]">
+                <h2 class="text-[#416B8C] text-[15px]">
+                  آیا از ثبت وضعیت اهداف اطمینان دارید؟
+                </h2>
+
+                <p class="text-[#718da3]">امکان ویرایش بعد از ثبت وجود ندارد</p>
+              </div>
+
+              <div
+                class="flex flex-col-reverse gap-2 mt-auto mb-[25px] items-center"
+              >
+                <a
+                  class="Set-Status-exit-btn-winter bg-[#7EAFcf] text-white px-8 py-1 rounded-[12px]"
+                  href=""
+                >
+                  ثبت وضعیت و خروج
+                </a>
+
+                <a
+                  class="edit-btn-Status-winter bg-[#DCEAF5] text-[#416B8C] px-18 py-1 rounded-[12px] w-full"
+                >
+                  ویرایش
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- بهار -->
+      <section class="bahar-page hidden flex-col">
+        <div class="flex justify-between items-center p-4">
+          <a class="guide-btn text-[#8E775E] text-[20px]"
+            ><i class="fa-solid fa-question"></i
+          ></a>
+
+          <a
+            class="back-home-page-bahar mr-auto text-[#8E775E] text-[20px]"
+            href=""
+            ><i class="fa-solid fa-arrow-left"></i
+          ></a>
+        </div>
+
+        <!-- تایتل -->
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-[#6E6243] text-[35px]">اهداف فصل بهار</h2>
+
+          <p class="text-[#988C6B]">با هدف های کوچک، قدم های بزرگ بردار.</p>
+        </div>
+
+        <!-- افزودن هدف -->
+        <div class="flex flex-row-reverse justify-center mt-[40px] gap-3">
+          <button
+            class="goals-btn bg-[#ECEAD7] px-3 py-1 rounded-[12px] text-[#7E764D] shadow-lg"
+          >
+            افزودن هدف
+          </button>
+
+          <input
+            class="goals-input bg-[#959C6C] px-3 rounded-[12px] shadow-lg text-[#FFFFFF]"
+            type="text"
+            placeholder="هدف من..."
+            maxlength="15"
+          />
+        </div>
+
+        <div class="cnt-goal-bahar mt-[20px]"></div>
+
+        <!-- ثبت اهداف-->
+        <div class="fixed bottom-0 mb-[30px] right-[22%]">
+          <a
+            class="Set-Goal bg-[#979D6D] text-[#F1FFD4] px-18 py-1 rounded-[12px]"
+            >ثبت اهداف
+          </a>
+
+          <!-- نتیجه اهداف -->
+          <!-- <a
+            class="flex flex-row-reverse items-center bg-[#F5E090] text-[#585956] px-2 py-1 rounded-[12px] gap-2"
+            >وضعیت اهداف<i class="fa-solid fa-chevron-right"></i
+          ></a> -->
+        </div>
+
+        <!-- ثبت اهداف و خروج -->
+        <div class="Set-Goal-exit hidden flex-col items-center">
+          <div
+            class="fixed inset-0 bg-[#5F4D37]/40 backdrop-blur-md z-[1000]"
+          ></div>
+
+          <div
+            class="Set-Goal-exit-text fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#ffffff] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+          >
+            <div class="text-center mt-[15px]">
+              <h2 class="text-[#2c1e16] text-[20px]">
+                آیا از ثبت اهداف اطمینان دارید؟
+              </h2>
+
+              <p class="text-[#656565]">امکان ویرایش بعد ثبت وجود ندارد</p>
+            </div>
+
+            <div class="flex flex-col-reverse gap-2 mt-auto mb-[25px]">
+              <a
+                class="Set-Goal-exit-btn bg-[#979D6D] text-[#F1FFD4] px-8 py-1 rounded-[12px]"
+                href=""
+              >
+                ثبت اهداف و خروج
+              </a>
+
+              <a
+                class="edit-btn bg-[#F5E090] text-[#585956] px-18 py-1 rounded-[12px]"
+              >
+                ویرایش
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- راهنما -->
+        <div class="guide hidden flex-col items-center">
+          <div class="fixed inset-0 bg-[#5F4D37]/40 backdrop-blur-md"></div>
+
+          <div
+            class="z-2 absolute flex flex-col items-center bg-[#ffffff] right-[15%] bottom-[30%] w-[70%] h-[400px] rounded-[12px]"
+          >
+            <a
+              class="Close-Guide mr-auto text-[#8E775E] text-[20px] ml-[10px] mt-[5px]"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+
+            <div>
+              <h2 class="text-center text-[#2c1e16] text-[20px]">
+                نکات ثبت هدف
+              </h2>
+              <hr class="w-[80%] mx-auto text-[#a37018]" />
+            </div>
+
+            <div class="mt-[20px] flex flex-col gap-2">
+              <p class="text-[#292828]">
+                پس از ثبت نهایی اهداف امکان ویرایش<br />
+                یا حذف اهداف وجود ندارد.
+              </p>
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <div class="mt-[20px] flex flex-col gap-2">
+              <p class="text-[#292828]">
+                در هر فصل حداکثر 10 هدف و هر هدف<br />
+                نهایتا باید 20 حرف باشد.
+              </p>
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <p class="mt-[20px] text-[#292828]">
+              برای هر فصل در هرسال تنها یک بار<br />
+              میتوانید اقدام به ثبت هدف نمایید.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- تابستان -->
+      <section class="summer-page hidden flex-col">
+        <div class="flex justify-between items-center p-4">
+          <a class="summer-guide-btn text-[#8E775E] text-[20px]">
+            <i class="fa-solid fa-question"></i>
+          </a>
+
+          <a
+            class="back-home-page-summer mr-auto text-[#8E775E] text-[20px]"
+            href=""
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <!-- تایتل -->
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-[#87621A] text-[35px]">اهداف فصل تابستان</h2>
+
+          <p class="text-[#988C6B]">با هدف های کوچک، قدم های بزرگ بردار.</p>
+        </div>
+
+        <!-- افزودن هدف -->
+        <div class="flex flex-row-reverse justify-center mt-[40px] gap-3">
+          <button
+            class="summer-goals-btn bg-[#FCF3CC] px-3 py-1 rounded-[12px] text-[#87621A] shadow-lg"
+          >
+            افزودن هدف
+          </button>
+
+          <input
+            class="summer-goals-input bg-[#EFBD5A] px-3 rounded-[12px] shadow-lg text-[#FFFFFF]"
+            type="text"
+            placeholder="هدف من..."
+            maxlength="15"
+          />
+        </div>
+
+        <div class="cnt-goal-summer mt-[20px]"></div>
+
+        <!-- ثبت اهداف -->
+        <div class="fixed bottom-0 mb-[30px] right-[22%]">
+          <a
+            class="summer-set-goal bg-[#EFBD5A] text-[#5F4D37] px-18 py-1 rounded-[12px]"
+          >
+            ثبت اهداف
+          </a>
+        </div>
+
+        <!-- ثبت اهداف و خروج -->
+        <div class="summer-set-goal-exit hidden flex-col items-center">
+          <div
+            class="fixed inset-0 bg-[#5F4D37]/40 backdrop-blur-md z-[1000]"
+          ></div>
+
+          <div
+            class="summer-set-goal-exit-text fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#ffffff] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+          >
+            <div class="text-center mt-[15px]">
+              <h2 class="text-[#2c1e16] text-[20px]">
+                آیا از ثبت اهداف اطمینان دارید؟
+              </h2>
+
+              <p class="text-[#656565]">امکان ویرایش بعد ثبت وجود ندارد</p>
+            </div>
+
+            <div class="flex flex-col-reverse gap-2 mt-auto mb-[25px]">
+              <a
+                class="summer-set-goal-exit-btn bg-[#EFBD5A] text-[#5F4D37] px-8 py-1 rounded-[12px]"
+                href=""
+              >
+                ثبت اهداف و خروج
+              </a>
+
+              <a
+                class="summer-edit-btn bg-[#F5E090] text-[#585956] px-18 py-1 rounded-[12px]"
+              >
+                ویرایش
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- راهنما -->
+        <div class="summer-guide hidden flex-col items-center">
+          <div class="fixed inset-0 bg-[#34495E]/40 backdrop-blur-md"></div>
+
+          <div
+            class="z-2 absolute flex flex-col items-center bg-[#F7FAFC] right-[12%] bottom-[25%] w-[75%] h-[400px] rounded-[12px]"
+          >
+            <a
+              class="summer-close-guide mr-auto text-[#416B8C] text-[20px] ml-[10px] mt-[5px]"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <div>
+              <h2 class="text-center text-[#416B8C] text-[20px]">
+                نکات ثبت هدف
+              </h2>
+
+              <hr class="w-[80%] mx-auto text-[#8CB7D9]" />
+            </div>
+
+            <div class="mt-[20px] flex flex-col gap-2">
+              <p class="text-[#292828]">
+                پس از ثبت نهایی اهداف امکان ویرایش<br />
+                یا حذف اهداف وجود ندارد.
+              </p>
+
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <div class="mt-[20px] px-1 flex flex-col gap-2 text-[15px]">
+              <p class="text-[#292828]">
+                در هر فصل حداکثر ۱۰ هدف می‌توانید ثبت <br />
+                کنید و هر هدف حداکثر ۱۵ حرف باشد.
+              </p>
+
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <p class="mt-[20px] text-[#292828] text-center">
+              برای هر فصل در هر سال فقط یک بار<br />
+              می‌توانید اهداف خود را ثبت کنید.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- پاییز -->
+      <section class="autumn-page hidden flex-col">
+        <div class="flex justify-between items-center p-4">
+          <a class="autumn-guide-btn text-[#AF6536] text-[20px]">
+            <i class="fa-solid fa-question"></i>
+          </a>
+
+          <a
+            class="back-home-page-autumn mr-auto text-[#AF6536] text-[20px]"
+            href=""
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <!-- عنوان -->
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-[#AF6536] text-[35px]">اهداف فصل پاییز</h2>
+
+          <p class="text-[#B7834B]">با هدف‌های کوچک، قدم‌های بزرگ بردار.</p>
+        </div>
+
+        <!-- افزودن هدف -->
+        <div class="flex flex-row-reverse justify-center mt-[40px] gap-3">
+          <button
+            class="autumn-goals-btn bg-[#FBEED3] px-3 py-1 rounded-[12px] text-[#AF6536] shadow-lg"
+          >
+            افزودن هدف
+          </button>
+
+          <input
+            class="autumn-goals-input bg-[#EB9359] px-3 rounded-[12px] shadow-lg text-white"
+            type="text"
+            placeholder="هدف من..."
+            maxlength="15"
+          />
+        </div>
+
+        <div class="cnt-goal-autumn mt-[20px]"></div>
+
+        <!-- ثبت اهداف -->
+        <div class="fixed bottom-0 mb-[30px] right-[22%]">
+          <a
+            class="autumn-set-goal bg-[#EB9359] text-white px-18 py-1 rounded-[12px]"
+          >
+            ثبت اهداف
+          </a>
+        </div>
+
+        <!-- تأیید ثبت نهایی -->
+        <div class="autumn-set-goal-exit hidden flex-col items-center">
+          <div
+            class="fixed inset-0 bg-[#8C4D2B]/40 backdrop-blur-md z-[1000]"
+          ></div>
+
+          <div
+            class="autumn-set-goal-exit-text fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#FFFCF5] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+          >
+            <div class="text-center mt-[15px]">
+              <h2 class="text-[#8C4D2B] text-[20px]">
+                آیا از ثبت اهداف اطمینان دارید؟
+              </h2>
+
+              <p class="text-[#8B8175]">امکان ویرایش بعد از ثبت وجود ندارد</p>
+            </div>
+
+            <div class="flex flex-col-reverse gap-2 mt-auto mb-[25px]">
+              <a
+                class="autumn-set-goal-exit-btn bg-[#EB9359] text-white px-8 py-1 rounded-[12px]"
+                href=""
+              >
+                ثبت اهداف و خروج
+              </a>
+
+              <a
+                class="autumn-edit-btn bg-[#FBE0C4] text-[#8C4D2B] px-18 py-1 rounded-[12px]"
+              >
+                ویرایش
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- راهنما -->
+        <div class="autumn-guide hidden flex-col items-center">
+          <div class="fixed inset-0 bg-[#34495E]/40 backdrop-blur-md"></div>
+
+          <div
+            class="z-2 absolute flex flex-col items-center bg-[#F7FAFC] right-[12%] bottom-[25%] w-[75%] h-[400px] rounded-[12px]"
+          >
+            <a
+              class="autumn-close-guide mr-auto text-[#416B8C] text-[20px] ml-[10px] mt-[5px]"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <div>
+              <h2 class="text-center text-[#416B8C] text-[20px]">
+                نکات ثبت هدف
+              </h2>
+
+              <hr class="w-[80%] mx-auto text-[#8CB7D9]" />
+            </div>
+
+            <div class="mt-[20px] flex flex-col gap-2">
+              <p class="text-[#292828]">
+                پس از ثبت نهایی اهداف امکان ویرایش<br />
+                یا حذف اهداف وجود ندارد.
+              </p>
+
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <div class="mt-[20px] px-1 flex flex-col gap-2 text-[15px]">
+              <p class="text-[#292828]">
+                در هر فصل حداکثر ۱۰ هدف می‌توانید ثبت <br />
+                کنید و هر هدف حداکثر ۱۵ حرف باشد.
+              </p>
+
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <p class="mt-[20px] text-[#292828] text-center">
+              برای هر فصل در هر سال فقط یک بار<br />
+              می‌توانید اهداف خود را ثبت کنید.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- زمستان -->
+      <section class="winter-page hidden flex-col">
+        <div class="flex justify-between items-center p-4">
+          <a class="winter-guide-btn text-[#416B8C] text-[20px]">
+            <i class="fa-solid fa-question"></i>
+          </a>
+
+          <a
+            class="back-home-page-winter mr-auto text-[#416B8C] text-[20px]"
+            href=""
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <!-- عنوان -->
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-[#416B8C] text-[35px]">اهداف فصل زمستان</h2>
+
+          <p class="text-[#6F94B2]">با هدف‌های کوچک، قدم‌های بزرگ بردار.</p>
+        </div>
+
+        <!-- افزودن هدف -->
+        <div class="flex flex-row-reverse justify-center mt-[40px] gap-3">
+          <button
+            class="winter-goals-btn bg-[#DCEAF5] px-3 py-1 rounded-[12px] text-[#416B8C] shadow-lg"
+          >
+            افزودن هدف
+          </button>
+
+          <input
+            class="winter-goals-input bg-[#8CB7D9] px-3 rounded-[12px] shadow-lg text-white"
+            type="text"
+            placeholder="هدف من..."
+            maxlength="15"
+          />
+        </div>
+
+        <div class="cnt-goal-winter mt-[20px]"></div>
+
+        <!-- ثبت اهداف -->
+        <div class="fixed bottom-0 mb-[30px] right-[22%]">
+          <a
+            class="winter-set-goal bg-[#8CB7D9] text-white px-18 py-1 rounded-[12px]"
+          >
+            ثبت اهداف
+          </a>
+        </div>
+
+        <!-- تأیید ثبت نهایی -->
+        <div class="winter-set-goal-exit hidden flex-col items-center">
+          <div
+            class="fixed inset-0 bg-[#34495E]/40 backdrop-blur-md z-[1000]"
+          ></div>
+
+          <div
+            class="winter-set-goal-exit-text fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001] flex flex-col items-center bg-[#F7FAFC] w-[70%] max-w-[400px] h-[300px] rounded-[12px]"
+          >
+            <div class="text-center mt-[15px]">
+              <h2 class="text-[#416B8C] text-[20px]">
+                آیا از ثبت اهداف اطمینان دارید؟
+              </h2>
+
+              <p class="text-[#718096]">امکان ویرایش بعد از ثبت وجود ندارد</p>
+            </div>
+
+            <div class="flex flex-col-reverse gap-2 mt-auto mb-[25px]">
+              <a
+                class="winter-set-goal-exit-btn bg-[#8CB7D9] text-white px-8 py-1 rounded-[12px]"
+                href=""
+              >
+                ثبت اهداف و خروج
+              </a>
+
+              <a
+                class="winter-edit-btn bg-[#DCEAF5] text-[#416B8C] px-18 py-1 rounded-[12px]"
+              >
+                ویرایش
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- راهنما -->
+        <div class="winter-guide hidden flex-col items-center">
+          <div class="fixed inset-0 bg-[#34495E]/40 backdrop-blur-md"></div>
+
+          <div
+            class="z-2 absolute flex flex-col items-center bg-[#F7FAFC] right-[12%] bottom-[25%] w-[75%] h-[400px] rounded-[12px]"
+          >
+            <a
+              class="winter-close-guide mr-auto text-[#416B8C] text-[20px] ml-[10px] mt-[5px]"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <div>
+              <h2 class="text-center text-[#416B8C] text-[20px]">
+                نکات ثبت هدف
+              </h2>
+
+              <hr class="w-[80%] mx-auto text-[#8CB7D9]" />
+            </div>
+
+            <div class="mt-[20px] flex flex-col gap-2">
+              <p class="text-[#292828]">
+                پس از ثبت نهایی اهداف امکان ویرایش<br />
+                یا حذف اهداف وجود ندارد.
+              </p>
+
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <div class="mt-[20px] px-1 flex flex-col gap-2 text-[15px]">
+              <p class="text-[#292828]">
+                در هر فصل حداکثر ۱۰ هدف می‌توانید ثبت <br />
+                کنید و هر هدف حداکثر ۱۵ حرف باشد.
+              </p>
+
+              <hr class="text-[#cecece]" />
+            </div>
+
+            <p class="mt-[20px] text-[#292828] text-center">
+              برای هر فصل در هر سال فقط یک بار<br />
+              می‌توانید اهداف خود را ثبت کنید.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,976 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Vazir";
+  src: url("./font/Vazir.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "paeez";
+  src: url("./font/paeez.ttf") format("truetype");
+}
+
+body {
+  font-family: "Vazir", sans-serif;
+}
+
+.craitor {
+  font-family: "paeez";
+}
+
+.desctop-text {
+  font-family: "paeez";
+  font-size: 30px;
+  color: #cea488;
+}
+
+.home-page.active {
+  display: flex;
+  margin-top: 20%;
+}
+
+.page-one.active {
+  display: flex;
+}
+
+.page-two.active {
+  display: flex;
+}
+
+.text-no-goals.not-active {
+  display: none;
+}
+
+.bahar-page.active {
+  display: flex;
+}
+
+.Set-Goal-exit.active {
+  display: flex;
+}
+
+.text-no-goals.active {
+  display: flex;
+}
+
+.guide.active {
+  display: flex;
+}
+
+.bahar-list-goal.active {
+  display: flex;
+}
+
+.seting.active {
+  display: flex;
+}
+
+.Set-Status-exit.active {
+  display: block;
+}
+
+.compleated-goal {
+  display: none;
+}
+
+.not-compleated-goal {
+  display: none;
+}
+
+.unknown-goal {
+  display: none;
+}
+
+.compleated-goal.active {
+  display: block;
+  color: #176b35;
+  background-color: #c8f7d0;
+  border: 1px solid #55c878;
+  font-size: 15px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.not-compleated-goal.active {
+  display: block;
+  color: #a52222;
+  background-color: #ffd6d6;
+  border: 1px solid #f07878;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.unknown-goal.active {
+  display: block;
+  color: #665548;
+  background-color: #e9e2d9;
+  border: 1px solid #b8a795;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.Set-Status.active {
+  display: block;
+}
+
+.back-end-page-goal-bahar.active {
+  display: block;
+}
+
+.goal-bahar-cnt-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 1px solid rgb(225, 225, 225);
+  padding: 5px 15px;
+  border-radius: 18px;
+}
+
+.btn-completed {
+  display: none;
+}
+
+.btn-completed.active {
+  display: flex;
+  gap: 10px;
+}
+
+.trash-goal-icon,
+.remove-all-goal {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.trash-goal-icon.active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.trash-goal-icon:not(.active) {
+  transform: translateX(-60px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.remove-all-goal {
+  transform: translateX(-60px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.remove-all-goal.active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.completed-goal-bahar {
+  border: 1px solid #988c7e;
+  padding: 5px 5px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.completed-goal-bahar.change-color {
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  background-color: #f0fdf4;
+}
+
+.not-completed-goal-bahar {
+  border: 1px solid #988c7e;
+  padding: 5px 6px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.not-completed-goal-bahar.change-color {
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  background-color: #fff1f2;
+}
+
+/* .not-completed-goal-bahar {
+  border: 1px solid #75674e;
+  padding: 5px 6px;
+  border-radius: 9px;
+  color: #75674e;
+} */
+
+.goal-bahar {
+  width: 90%;
+  border: 1px solid #e6e2d0;
+  background-color: #f9f6e8;
+  color: #75674e;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 2px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-delet-goal {
+  background-color: rgb(229, 229, 229);
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.Error-message-bahar {
+  width: 60%;
+  border: 1px solid #e6e2d0;
+  color: #75674e;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 2px 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(25, 25, 25, 0.21);
+}
+
+.Error-message-bahar_div {
+  width: 60%;
+  border: 1px solid #e6e2d0;
+  color: #75674e;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 2px 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(25, 25, 25, 0.21);
+}
+
+.cnt-my-goals-bahar {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+  margin: 25px;
+  background-color: #ebf1d5;
+  border-radius: 12px;
+}
+
+.cnt-text-goals-bahar {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.btn-my-goals-bahar {
+  background-color: #e9e9d3;
+  color: #787f4b;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 800%;
+  border-radius: 12px;
+  margin-top: 15px;
+  gap: 10px;
+  height: 20px;
+  margin-right: auto;
+}
+
+.btn-my-goals-bahar a {
+  font-size: 10px;
+}
+
+.cnt-my-goals-bahar img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.cnt-text-goals-bahar h3 {
+  color: #686d42;
+  font-size: 20px;
+}
+
+.cnt-text-goals-bahar p {
+  color: #93976e;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.btn-my-goals-bahar i {
+  background: none;
+  font-size: 12px;
+}
+
+/* =================================
+   بخش تابستان
+================================= */
+
+.summer-page.active {
+  display: flex;
+}
+
+.summer-guide.active {
+  display: flex;
+}
+
+.summer-set-goal-exit.active {
+  display: flex;
+}
+
+.summer-list-goal.active {
+  display: flex;
+}
+
+.cnt-my-goals-summer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 25px;
+  background-color: #fcf3cc;
+  border-radius: 12px;
+}
+
+.cnt-text-goals-summer {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.btn-my-goals-summer {
+  background-color: #fcba22;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 12px;
+  margin-top: 30px;
+  gap: 10px;
+  height: 20px;
+  margin-right: auto;
+}
+
+.btn-my-goals-summer a {
+  font-size: 10px;
+}
+
+.cnt-my-goals-summer img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.cnt-text-goals-summer h3 {
+  color: #a78149;
+  font-size: 20px;
+}
+
+.cnt-text-goals-summer p {
+  color: #97836e;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.btn-my-goals-summer i {
+  background: none;
+  font-size: 12px;
+}
+
+.goal-summer-cnt-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 1px solid rgb(225, 225, 225);
+  padding: 5px 15px;
+  border-radius: 18px;
+}
+
+.btn-completed-summer {
+  display: none;
+}
+
+.btn-completed-summer.active {
+  display: flex;
+  gap: 10px;
+}
+
+.completed-goal-summer {
+  border: 1px solid #988c7e;
+  padding: 5px 5px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.completed-goal-summer.change-color {
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  background-color: #f0fdf4;
+}
+
+.not-completed-goal-summer {
+  border: 1px solid #988c7e;
+  padding: 5px 6px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.not-completed-goal-summer.change-color {
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  background-color: #fff1f2;
+}
+
+.compleated-goal-summer,
+.not-compleated-goal-summer-text,
+.unknown-goal-summer {
+  display: none;
+}
+
+.compleated-goal-summer.active {
+  display: block;
+  color: #176b35;
+  background-color: #c8f7d0;
+  border: 1px solid #55c878;
+  font-size: 15px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.not-compleated-goal-summer-text.active {
+  display: block;
+  color: #a52222;
+  background-color: #ffd6d6;
+  border: 1px solid #f07878;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.unknown-goal-summer.active {
+  display: block;
+  color: #665548;
+  background-color: #e9e2d9;
+  border: 1px solid #b8a795;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.Set-Status-Summer.active {
+  display: flex;
+}
+
+.back-end-page-goal-summer.active {
+  display: flex;
+}
+
+.Set-Status-exit-summer {
+  display: none;
+}
+
+.Set-Status-exit-summer.active {
+  display: block;
+}
+
+.Set-Status-exit-text-summer {
+  z-index: 1001;
+  background-color: #f9f6e8;
+  color: #75674e;
+  border: 1px solid #e6e2d0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(25, 25, 25, 0.21);
+  text-align: center;
+}
+
+.Set-Status-exit-btn-summer {
+  background-color: #e9e9d3;
+  color: #787f4b;
+  border: 1px solid #e6e2d0;
+  border-radius: 12px;
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.edit-btn-Status-summer {
+  background-color: #e9e9d3;
+  color: #787f4b;
+  border: 1px solid #e6e2d0;
+  border-radius: 12px;
+  padding: 6px 16px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* =================================
+   بخش پاییز
+================================= */
+
+.autumn-page.active {
+  display: flex;
+}
+
+.autumn-guide.active {
+  display: flex;
+}
+
+.autumn-set-goal-exit.active {
+  display: flex;
+}
+
+.autumn-list-goal.active {
+  display: flex;
+}
+
+.cnt-my-goals-autumn {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 25px;
+  background-color: #fbeed3;
+  border-radius: 12px;
+}
+
+.cnt-text-goals-autumn {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.btn-my-goals-autumn {
+  background-color: #eb9359;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border-radius: 12px;
+  margin-top: 15px;
+  gap: 10px;
+  height: 20px;
+  margin-right: auto;
+}
+
+.btn-my-goals-autumn a {
+  font-size: 10px;
+}
+
+.cnt-my-goals-autumn img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.cnt-text-goals-autumn h3 {
+  color: #af6536;
+  font-size: 20px;
+}
+
+.cnt-text-goals-autumn p {
+  color: #8c4d2b;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.btn-my-goals-autumn i {
+  background: none;
+  font-size: 12px;
+}
+
+.goal-autumn-cnt-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 1px solid #e8d8c4;
+  padding: 5px 15px;
+  border-radius: 18px;
+}
+
+.btn-completed-autumn {
+  display: none;
+}
+
+.btn-completed-autumn.active {
+  display: flex;
+  gap: 10px;
+}
+
+.completed-goal-autumn {
+  border: 1px solid #988c7e;
+  padding: 5px 5px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.completed-goal-autumn.change-color {
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  background-color: #f0fdf4;
+}
+
+.not-completed-goal-autumn {
+  border: 1px solid #988c7e;
+  padding: 5px 6px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.not-completed-goal-autumn.change-color {
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  background-color: #fff1f2;
+}
+
+.compleated-goal-autumn,
+.not-compleated-goal-autumn-text,
+.unknown-goal-autumn {
+  display: none;
+}
+
+.compleated-goal-autumn.active {
+  display: block;
+  color: #176b35;
+  background-color: #c8f7d0;
+  border: 1px solid #55c878;
+  font-size: 15px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.not-compleated-goal-autumn-text.active {
+  display: block;
+  color: #a52222;
+  background-color: #ffd6d6;
+  border: 1px solid #f07878;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.unknown-goal-autumn.active {
+  display: block;
+  color: #665548;
+  background-color: #e9e2d9;
+  border: 1px solid #b8a795;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* ثبت وضعیت اهداف */
+
+.Set-Status-Autumn.active {
+  display: flex;
+}
+
+.back-end-page-goal-autumn.active {
+  display: flex;
+}
+
+.Set-Status-exit-autumn {
+  display: none;
+}
+
+.Set-Status-exit-autumn.active {
+  display: block;
+}
+
+.Set-Status-exit-text-autumn {
+  z-index: 1001;
+  background-color: #fbeed3;
+  color: #8c4d2b;
+  border: 1px solid #e8d8c4;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(25, 25, 25, 0.21);
+  text-align: center;
+}
+
+.Set-Status-exit-btn-autumn {
+  background-color: #eb9359;
+  color: #ffffff;
+  border: 1px solid #d47d43;
+  border-radius: 12px;
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.edit-btn-Status-autumn {
+  background-color: #fbe0c4;
+  color: #8c4d2b;
+  border: 1px solid #e8c6a6;
+  border-radius: 12px;
+  padding: 6px 16px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* =================================
+   بخش زمستان
+================================= */
+
+.winter-page.active {
+  display: flex;
+}
+
+.winter-guide.active {
+  display: flex;
+}
+
+.winter-set-goal-exit.active {
+  display: flex;
+}
+
+.winter-list-goal.active {
+  display: flex;
+}
+
+.cnt-my-goals-winter {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 25px;
+  background-color: #e5f1f8;
+  border-radius: 12px;
+}
+
+.cnt-text-goals-winter {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.btn-my-goals-winter {
+  background-color: #7eafcf;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 12px;
+  margin-top: 15px;
+  gap: 10px;
+  height: 20px;
+  margin-right: auto;
+}
+
+.btn-my-goals-winter a {
+  font-size: 10px;
+}
+
+.cnt-my-goals-winter img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.cnt-text-goals-winter h3 {
+  color: #416b8c;
+  font-size: 20px;
+}
+
+.cnt-text-goals-winter p {
+  color: #718da3;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.btn-my-goals-winter i {
+  background: none;
+  font-size: 12px;
+}
+
+.goal-winter-cnt-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 1px solid #d5e2eb;
+  padding: 5px 15px;
+  border-radius: 18px;
+}
+
+/* =================================
+   دکمه‌های انجام شد / نشد
+   مشترک با بهار و تابستان
+================================= */
+
+.btn-completed-winter {
+  display: none;
+}
+
+.btn-completed-winter.active {
+  display: flex;
+  gap: 10px;
+}
+
+.completed-goal-winter {
+  border: 1px solid #988c7e;
+  padding: 5px 5px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.completed-goal-winter.change-color {
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  background-color: #f0fdf4;
+}
+
+.not-completed-goal-winter {
+  border: 1px solid #988c7e;
+  padding: 5px 6px;
+  border-radius: 9px;
+  color: #a8a097;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.not-completed-goal-winter.change-color {
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  background-color: #fff1f2;
+}
+
+/* =================================
+   وضعیت‌های ثبت‌شده اهداف
+   مشترک با بهار و تابستان
+================================= */
+
+.compleated-goal-winter,
+.not-compleated-goal-winter-text,
+.unknown-goal-winter {
+  display: none;
+}
+
+.compleated-goal-winter.active {
+  display: block;
+  color: #176b35;
+  background-color: #c8f7d0;
+  border: 1px solid #55c878;
+  font-size: 15px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.not-compleated-goal-winter-text.active {
+  display: block;
+  color: #a52222;
+  background-color: #ffd6d6;
+  border: 1px solid #f07878;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.unknown-goal-winter.active {
+  display: block;
+  color: #665548;
+  background-color: #e9e2d9;
+  border: 1px solid #b8a795;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* =================================
+   ثبت وضعیت اهداف
+================================= */
+
+.Set-Status-Winter.active {
+  display: flex;
+}
+
+.back-end-page-goal-winter.active {
+  display: flex;
+}
+
+.Set-Status-exit-winter {
+  display: none;
+}
+
+.Set-Status-exit-winter.active {
+  display: block;
+}
+
+.Set-Status-exit-text-winter {
+  z-index: 1001;
+  background-color: #f0f6fa;
+  color: #416b8c;
+  border: 1px solid #d5e5ef;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(25, 25, 25, 0.21);
+  text-align: center;
+}
+
+.Set-Status-exit-btn-winter {
+  background-color: #7eafcf;
+  color: #ffffff;
+  border: 1px solid #679abb;
+  border-radius: 12px;
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.edit-btn-Status-winter {
+  background-color: #dceaf5;
+  color: #416b8c;
+  border: 1px solid #c2d9e8;
+  border-radius: 12px;
+  padding: 6px 16px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
